@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AirPlane_Movment : MonoBehaviour
+public class AirPlan_Movment : MonoBehaviour
 {
     public Transform transform;
     public float speed=4f;
