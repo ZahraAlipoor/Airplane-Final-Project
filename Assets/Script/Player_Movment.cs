@@ -20,6 +20,10 @@ public class Player_Movment : MonoBehaviour
          if(Input.GetKey(KeyCode.LeftArrow)){
             transform.position -= new Vector3(speed * Time.deltaTime , 0,0);
         }
+
+        Vector3 pos =transform.position;
+        pos.x = Mathf.Clamp(pos.x,-1.52f,1.52f);
+        transform.position=pos;
         
     }
 }

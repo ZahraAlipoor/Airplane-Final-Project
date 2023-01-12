@@ -8,6 +8,7 @@ public class AirPlan_Movment : MonoBehaviour
     public float speed=4f;
     void Start()
     {
+        transform =GetComponent<Transform>(); 
         
     }
 
