@@ -29,5 +29,13 @@ public class Player_Movment : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x,-1.52f,1.52f);
         transform.position=pos;
         
+        
+    
     }
+  // private void OnTriggerEnter2D(Collider2D collision){
+    // if(collision.gameObject.tag=="enemy"){
+      //   Time.timeScale = 0;
+    // }
+    //}
+
 }
