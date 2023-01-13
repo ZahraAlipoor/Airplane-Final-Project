@@ -32,10 +32,10 @@ public class Player_Movment : MonoBehaviour
         
     
     }
-  // private void OnTriggerEnter2D(Collider2D collision){
-    // if(collision.gameObject.tag=="enemy"){
-      //   Time.timeScale = 0;
-    // }
-    //}
+  private void OnTriggerEnter2D(Collider2D collision){
+    if(collision.gameObject.tag=="enemy"){
+       Time.timeScale = 0;
+     }
+    }
 
 }
