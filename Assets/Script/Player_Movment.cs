@@ -26,7 +26,7 @@ public class Player_Movment : MonoBehaviour
         
 
         Vector3 pos =transform.position;
-        pos.x = Mathf.Clamp(pos.x,-1.52f,1.52f);
+        pos.x = Mathf.Clamp(pos.x,-3.05f,3.05f);
         transform.position=pos;
         
         
