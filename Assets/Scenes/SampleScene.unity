@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160223892}
   - component: {fileID: 160223893}
+  - component: {fileID: 160223894}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -174,6 +175,21 @@ MonoBehaviour:
   - {fileID: 4679896378185275403, guid: 830810f2ce604ea43adeea2038944449, type: 3}
   - {fileID: 7031328381389220075, guid: 19953217bcfa4e148a19731804380c09, type: 3}
   - {fileID: 8266647340950340674, guid: 9899cf1cd4775944485aa5df0845ea57, type: 3}
+--- !u!114 &160223894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160223891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd57aa02400a45449b474efd287ee50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefabs:
+  - {fileID: 8289803528570790171, guid: 8a20c73bfb7e90248ad5efdb78073d16, type: 3}
+  - {fileID: 8557886915955217867, guid: 48c0adca1ed6be24d96e9f72b5266883, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
