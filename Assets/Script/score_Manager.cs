@@ -8,17 +8,20 @@ public class score_Manager : MonoBehaviour
 {
     public int score =0;
     public int highScore;
-
-    public static int lastScore = 0;
+    public static int lastScore =0 ;
 
     public Text scoreText;  
+    public Text HighScoreText;  
+    public Text lastScoreText;  
+
     void Start()
     {
         StartCoroutine(Score());
+          StartCoroutine(Reload());
         highScore = PlayerPrefs.GetInt("high_score" , 0);
-        Debug.Log("high score stored:" + PlayerPrefs.GetInt("high_score"));
-        Debug.Log("high score  :" + highScore );
-         Debug.Log("last store  :" + lastScore );
+         HighScoreText.text = "High Score: "+ highScore.ToString();
+        lastScoreText.text = "Last Score: "+ lastScore.ToString();
+        
         
     }
 
@@ -35,6 +38,7 @@ public class score_Manager : MonoBehaviour
         while(true){
         yield return new WaitForSeconds(2);
          score = score +1;
+         lastScore =score;
         
     }
         }
