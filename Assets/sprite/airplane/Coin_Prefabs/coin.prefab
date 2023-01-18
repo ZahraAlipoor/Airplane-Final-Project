@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8557886915955217869}
   - component: {fileID: 8557886915955217866}
   - component: {fileID: 8557886915955217871}
+  - component: {fileID: 2917258745408640263}
   m_Layer: 0
   m_Name: coin
   m_TagString: coin.heart
@@ -120,3 +121,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transform: {fileID: 8557886915955217868}
   speed: 4
+--- !u!58 &2917258745408640263
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557886915955217867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.35333332
