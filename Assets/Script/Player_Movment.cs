@@ -9,9 +9,11 @@ public class Player_Movment : MonoBehaviour
     public float rotationSpeed=5f;
 
     public score_Manager score_value;
+
+    public GameObject gameOverPanel;
     void Start()
     {
-        
+        gameOverPanel.SetActive(false);
     }
 
     
@@ -37,6 +39,7 @@ public class Player_Movment : MonoBehaviour
   private void OnTriggerEnter2D(Collider2D collision){
     if(collision.gameObject.tag=="enemy"){
        Time.timeScale = 0;
+       gameOverPanel.SetActive(true);
      }
      if(collision.gameObject.tag=="coin.heart"){
       score_value.score += 10;
