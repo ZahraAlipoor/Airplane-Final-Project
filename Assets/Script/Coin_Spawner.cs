@@ -23,7 +23,7 @@ public class Coin_Spawner : MonoBehaviour
 }
  IEnumerator coinSpawner(){
         while(true){
-        int time =Random.Range(8,20);
+        int time =Random.Range(8,18);
         yield return new WaitForSeconds(time);
         coin();
 
