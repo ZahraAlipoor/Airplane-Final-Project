@@ -8,7 +8,7 @@ public class Player_Movment : MonoBehaviour
     public float speed=1.5f;
     public float rotationSpeed=5f;
 
-    
+    public score_Manager score_value;
     void Start()
     {
         
@@ -39,7 +39,9 @@ public class Player_Movment : MonoBehaviour
        Time.timeScale = 0;
      }
      if(collision.gameObject.tag=="coin.heart"){
+      score_value.score += 10;
       Destroy(collision.gameObject);
+      
      }
     }
 

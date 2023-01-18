@@ -722,8 +722,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 1806815482}
-  speed: 1.5
+  speed: 2
   rotationSpeed: 5
+  score_value: {fileID: 1806815485}
 --- !u!4 &1806815482
 Transform:
   m_ObjectHideFlags: 0
