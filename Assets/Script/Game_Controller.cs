@@ -12,10 +12,13 @@ public class Game_Controller : MonoBehaviour
   public int highScore;
   public score_Manager Score_manager;
 
+  public GameObject gamePausePanel;
+  public GameObject gamePauseButton;
 
     void Start()
     {
-        
+        gamePausePanel.SetActive(false);
+        gamePauseButton.SetActive(true);
     }
 
     
@@ -33,4 +36,15 @@ public class Game_Controller : MonoBehaviour
     public void Home (){
        SceneManager.LoadScene("Start");
     }
+      public void PauseGame(){
+        Time.timeScale = 0;
+        gamePausePanel.SetActive(true);
+        gamePauseButton.SetActive(false);
+      }
+      public void ResumeGame(){
+        Time.timeScale = 1;
+         gamePausePanel.SetActive(false);
+         gamePauseButton.SetActive(true);
+      }
+
 }
