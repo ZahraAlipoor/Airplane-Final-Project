@@ -6,6 +6,7 @@ public class Airplane_Movment1 : MonoBehaviour
 {
      public Transform transform;
     public float speed=4f;
+    
     void Start()
     {
           transform =GetComponent<Transform>(); 
@@ -16,10 +17,15 @@ public class Airplane_Movment1 : MonoBehaviour
     {
         transform.position -= new Vector3(0,speed * Time.deltaTime ,0);
          if(transform.position.y <= -10){
-          
-          Destroy(gameObject);
+            Destroy(gameObject);
+             
+           
 
+       
 
-         }
-    }
+         } 
+         
+    
 }
+}
+

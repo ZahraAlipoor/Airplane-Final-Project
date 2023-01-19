@@ -7,10 +7,9 @@ public class Player_Movment : MonoBehaviour
     public Transform transform;
     public float speed=1.5f;
     public float rotationSpeed=5f;
-
     public score_Manager score_value;
-
     public GameObject gameOverPanel;
+     public  AudioSource CoinSound;
     void Start()
     {
         gameOverPanel.SetActive(false);
@@ -41,12 +40,19 @@ public class Player_Movment : MonoBehaviour
     if(collision.gameObject.tag=="enemy"){
        Time.timeScale = 0;
        gameOverPanel.SetActive(true);
-     }
+
+     } 
      if(collision.gameObject.tag=="coin.heart"){
       score_value.score += 10;
-      Destroy(collision.gameObject);
+     Destroy(collision.gameObject);
       
-     }
+   }
+    if (collision.gameObject.tag == "coin.heart"){
+               CoinSound.Play();
+               score_value.score += 10;
+              Destroy(collision.gameObject);
     }
-
+  }
 }
+
+

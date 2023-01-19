@@ -126,3 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transform: {fileID: 0}
   speed: 4
+  GameOverSound: {fileID: 0}
