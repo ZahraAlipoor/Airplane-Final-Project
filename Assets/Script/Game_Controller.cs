@@ -32,6 +32,10 @@ public class Game_Controller : MonoBehaviour
     }
      public void Restart(){
         SceneManager.LoadScene("game");
+
+    }
+    public void start(){
+      SceneManager.LoadScene("game");
     }
     public void Home (){
        SceneManager.LoadScene("Start");
