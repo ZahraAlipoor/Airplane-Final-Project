@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Airplane_Movment1 : MonoBehaviour
 {
+
+
+     
      public Transform transform;
     public float speed=4f;
     
@@ -24,6 +27,7 @@ public class Airplane_Movment1 : MonoBehaviour
        
 
          } 
+         
          
     
 }

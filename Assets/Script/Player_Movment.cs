@@ -10,6 +10,8 @@ public class Player_Movment : MonoBehaviour
     public score_Manager score_value;
     public GameObject gameOverPanel;
      public  AudioSource CoinSound;
+    public GameObject bulletprefabs;
+    public float bulletspeed;
     void Start()
     {
         gameOverPanel.SetActive(false);
@@ -33,8 +35,17 @@ public class Player_Movment : MonoBehaviour
         pos.x = Mathf.Clamp(pos.x,-2.88f,2.88f);
         transform.position=pos;
         
-        
+        Shooting();
     
+    }
+     void Shooting(){
+        if(Input.GetKeyDown(KeyCode.Space)){
+            GameObject bullet = Instantiate(bulletprefabs);
+            bullet.transform.SetParent(transform.parent);
+            bullet.transform.position = transform.position;
+            bullet.GetComponent<Rigidbody2D>().velocity = new Vector3(0, bulletspeed , transform.position.z);
+            Destroy(bullet, 5);
+        }
     }
   private void OnTriggerEnter2D(Collider2D collision){
     if(collision.gameObject.tag=="enemy"){
@@ -52,6 +63,7 @@ public class Player_Movment : MonoBehaviour
                score_value.score += 10;
               Destroy(collision.gameObject);
     }
+    
   }
 }
 

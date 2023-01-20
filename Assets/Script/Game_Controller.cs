@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Game_Controller : MonoBehaviour
+
+
+
 { public Text highScoreText;
   public Text scoreText;
   
@@ -50,5 +53,6 @@ public class Game_Controller : MonoBehaviour
          gamePausePanel.SetActive(false);
          gamePauseButton.SetActive(true);
       }
-
 }
+
+
